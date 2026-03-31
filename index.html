@@ -7,16 +7,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -37,88 +32,88 @@
             background: linear-gradient(135deg, #4c51bf, #667eea);
             color: white;
             text-align: center;
-            padding: 60px 20px 40px;
+            padding: 40px 20px 30px;
+        }
+        
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 6px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            object-fit: cover;
         }
         
         .header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
+            font-size: 2.4rem;
+            margin: 15px 0 8px;
         }
         
         .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.15rem;
+            opacity: 0.95;
         }
         
         .content {
-            padding: 50px 40px;
+            padding: 45px 35px;
             text-align: center;
         }
         
         .content h2 {
             color: #4c51bf;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
+            margin-bottom: 18px;
         }
         
         .content p {
             font-size: 1.1rem;
-            line-height: 1.7;
+            line-height: 1.75;
             color: #555;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
         
         .btn {
             display: inline-block;
             background: #667eea;
             color: white;
-            padding: 14px 32px;
+            padding: 14px 34px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            margin: 10px;
+            margin: 8px;
             transition: all 0.3s;
         }
         
         .btn:hover {
             background: #4c51bf;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
         }
         
         .footer {
             background: #f8f9fa;
             padding: 25px;
             text-align: center;
-            font-size: 0.95rem;
             color: #777;
-        }
-        
-        .highlight {
-            color: #667eea;
-            font-weight: 600;
+            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
         <div class="header">
-            <h1>Hai, saya Faris!</h1>
-            <p>Projek Pertama Saya di GitHub Codespaces</p>
+            <img src="profile.jpg" alt="Profile Faris" class="profile-img">
+            <h1>Muhammad Faris</h1>
+            <p>Pelajar & Pembelajar Coding dari Tablet</p>
         </div>
         
-        <!-- Content -->
         <div class="content">
             <h2>Selamat Datang ke Website Saya</h2>
-            <p>Ini adalah website pertama saya yang dibuat sepenuhnya menggunakan <span class="highlight">GitHub Codespaces</span> terus dari tablet.</p>
+            <p>Ini adalah website pertama saya yang dibina sepenuhnya menggunakan GitHub Codespaces terus dari tablet.</p>
             <p>Saya sedang belajar coding step by step. Terima kasih kerana melawat!</p>
             
             <a href="#" class="btn">Tentang Saya</a>
             <a href="#" class="btn">Projek Saya</a>
         </div>
         
-        <!-- Footer -->
         <div class="footer">
             <p><strong>Tarikh hari ini:</strong> 31 Mac 2026</p>
             <p>Dibina dengan ❤️ menggunakan HTML & CSS</p>
