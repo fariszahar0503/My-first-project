@@ -15,7 +15,7 @@
             scroll-behavior: smooth;
         }
         
-        /* Menu Bar */
+        /* ==================== MENU BAR ==================== */
         nav {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -40,60 +40,81 @@
             color: #4c51bf;
         }
         
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        
         .nav-links a {
             text-decoration: none;
             color: #333;
             font-weight: 500;
+            margin-left: 30px;
             transition: color 0.3s;
         }
         
         .nav-links a:hover {
             color: #667eea;
         }
-        
-        /* Hero */
+
+        /* ==================== HERO SECTION (Macam contoh Sarah) ==================== */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             min-height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
             padding: 20px;
         }
         
         .hero-content {
-            max-width: 800px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
         }
         
-        .profile-img {
-            width: 160px;
-            height: 160px;
+        .hero-img {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+        }
+        
+        .hero-img img {
+            width: 280px;
+            height: 280px;
             border-radius: 50%;
-            border: 6px solid white;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-            margin-bottom: 25px;
+            border: 8px solid rgba(255,255,255,0.9);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
             object-fit: cover;
         }
         
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
         }
         
-        .hero p {
-            font-size: 1.25rem;
+        .hero-text h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .hero-text p {
+            font-size: 1.35rem;
             margin-bottom: 30px;
             opacity: 0.95;
         }
         
-        /* Sections */
+        .btn {
+            background: white;
+            color: #4c51bf;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+        
+        /* ==================== SECTIONS UMUM ==================== */
         section {
             padding: 100px 20px;
             max-width: 1100px;
@@ -136,21 +157,6 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
         
-        .project-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-        
-        .project-info {
-            padding: 20px;
-        }
-        
-        .project-info h3 {
-            margin-bottom: 10px;
-            color: #4c51bf;
-        }
-        
         footer {
             background: #333;
             color: white;
@@ -161,7 +167,7 @@
 </head>
 <body>
     
-    <!-- Menu Bar -->
+    <!-- MENU BAR -->
     <nav>
         <div class="nav-container">
             <div class="logo">Faris</div>
@@ -175,16 +181,413 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="profile.jpg" alt="Muhammad Faris" class="profile-img">
-            <h1>Muhammad Faris</h1>
-            <p>Pelajar Coding • Belajar Web Development dari Tablet</p>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="profile.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
         </div>
-    </section>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>    <!-- HERO SECTION -->
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>    <section id="home" class="hero">
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>        <div class="hero-content">
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>            <div class="hero-img">
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>                <img src="IMG202205181454348.jpg" alt="Muhammad Faris">
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>            </div>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>            <div class="hero-text">
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>                <h1>Hi, I'm Faris</h1>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>                <p>Saya pelajar coding dari Kuala Lumpur.<br>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>                   Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.</p>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>                <a href="#projects" class="btn">Lihat Projek Saya</a>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>            </div>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>        </div>
+<!-- HERO SECTION - Macam Sarah (gambar penuh, tiada bulatan) -->
+<section id="home" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; display: flex; align-items: center; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+        
+        <!-- Gambar sebelah kiri (tiada bulatan, tiada border) -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="IMG202205181454348.jpg" 
+                 alt="Muhammad Faris" 
+                 style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        </div>
+        
+        <!-- Teks sebelah kanan -->
+        <div style="flex: 1; min-width: 320px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; line-height: 1.1;">
+                Hi, I'm Faris
+            </h1>
+            <p style="font-size: 1.35rem; margin-bottom: 35px; opacity: 0.95;">
+                Saya pelajar coding dari Kuala Lumpur.<br>
+                Sedang belajar web development menggunakan GitHub Codespaces terus dari tablet.
+            </p>
+            <a href="#projects" 
+               style="background: white; color: #4c51bf; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                Lihat Projek Saya
+            </a>
+        </div>
+    </div>
+</section>    </section>
 
-    <!-- About -->
+    <!-- ABOUT SECTION -->
     <section id="about">
         <h2 class="section-title">Tentang Saya</h2>
         <p style="max-width: 700px; margin: 0 auto; text-align: center; font-size: 1.1rem; color: #555;">
@@ -194,7 +597,7 @@
         </p>
     </section>
 
-    <!-- Skills -->
+    <!-- SKILLS SECTION -->
     <section id="skills" style="background: #f8f9fa;">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
@@ -207,28 +610,26 @@
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- PROJECTS SECTION -->
     <section id="projects">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <img src="profile.jpg" alt="Personal Portfolio">
-                <div class="project-info">
+                <img src="IMG202205181454348.jpg" alt="Personal Portfolio">
+                <div style="padding: 20px;">
                     <h3>Personal Portfolio Website</h3>
                     <p>Website peribadi pertama saya yang dibina sepenuhnya menggunakan GitHub Codespaces dari tablet.</p>
                     <p><strong>Teknologi:</strong> HTML, CSS</p>
                 </div>
             </div>
-            
-            <!-- Boleh tambah projek lain nanti -->
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT SECTION -->
     <section id="contact" style="background: #f8f9fa;">
         <h2 class="section-title">Hubungi Saya</h2>
-        <p style="text-align: center; font-size: 1.1rem; color: #555; max-width: 600px; margin: 0 auto;">
-            Kalau nak berbincang atau tengok projek saya, boleh hubungi saya melalui WhatsApp atau Instagram.
+        <p style="text-align: center; font-size: 1.1rem; color: #555;">
+            Kalau nak berbincang atau tengok projek saya, boleh hubungi saya.
         </p>
     </section>
 
